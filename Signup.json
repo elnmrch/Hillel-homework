@@ -1,0 +1,32 @@
+[
+    {
+        "data": {
+            "name": "",
+            "lastName": "Doe",
+            "email": "john.doe@mail.com",
+            "password": "Qwerty123",
+            "repeatPassword": "Qwerty123"
+        },
+        "expectedMessage": "\"name\" is not allowed to be empty"
+    },
+    {
+        "data": {
+            "name": "John",
+            "lastName": "Doe",
+            "email": "john.doemail.com",
+            "password": "Qwerty123",
+            "repeatPassword": "Qwerty123"
+        },
+        "expectedMessage": "Email is incorrect"
+    },
+    {
+        "data": {
+            "name": "John",
+            "lastName": "Doe",
+            "email": "john.doe@mail.com",
+            "password": "Qwerty123",
+            "repeatPassword": "Qwerty1234"
+        },
+        "expectedMessage": "Passwords do not match"
+    }
+]
